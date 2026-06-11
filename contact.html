@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Tim Hartvelt</title>
+  <meta name="description" content="Get in touch with Tim Hartvelt — for security advisory, speaking, leadership conversations, or just a good chat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══════ NAV ═══════ -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">Tim<span>.</span></a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="https://www.linkedin.com/newsletters/operating-ot-cybersecurity-7418298155592675328/" target="_blank" rel="noopener">Operating OT Cybersecurity</a>
+        <a href="contact.html" class="btn-nav active">Contact</a>
+      </div>
+      <div class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="https://www.linkedin.com/newsletters/operating-ot-cybersecurity-7418298155592675328/" target="_blank" rel="noopener">Operating OT Cybersecurity</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="contact-hero">
+    <span class="label">Get in touch</span>
+    <h1>Let's talk</h1>
+    <p>Security, leadership, faith, or anything in between — I'm always open to a good conversation.</p>
+  </section>
+
+  <!-- ═══════ CONTACT LAYOUT ═══════ -->
+  <section class="section section--dark" style="padding-top:0;">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: links -->
+        <div class="contact-info">
+          <h3>Find me online</h3>
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/in/hartvelt/" target="_blank" rel="noopener">
+              <div class="contact-link__icon">🔗</div>
+              <div>
+                <div style="font-weight:600;color:var(--text);margin-bottom:2px;">LinkedIn</div>
+                linkedin.com/in/hartvelt
+              </div>
+            </a>
+            <a class="contact-link" href="https://www.fox-it.com" target="_blank" rel="noopener">
+              <div class="contact-link__icon">🛡️</div>
+              <div>
+                <div style="font-weight:600;color:var(--text);margin-bottom:2px;">Fox-IT · NCC Group</div>
+                fox-it.com
+              </div>
+            </a>
+            <a class="contact-link" href="https://www.bollenstreek.it" target="_blank" rel="noopener">
+              <div class="contact-link__icon">💻</div>
+              <div>
+                <div style="font-weight:600;color:var(--text);margin-bottom:2px;">Bollenstreek IT</div>
+                bollenstreek.it
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="form-card">
+          <!--
+            HOW TO ACTIVATE THE FORM:
+            1. Sign up at https://formspree.io (free tier available)
+            2. Create a new form and copy your form ID
+            3. Replace "YOUR_FORM_ID" below with your actual ID (e.g. "xpzgkabc")
+          -->
+          <form id="contactForm" action="https://formspree.io/f/maqzpnla" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="security-advisory">Cyber Security &amp; OT Advisory</option>
+                <option value="speaking">Speaking or Panels</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What would you like to discuss?" required></textarea>
+            </div>
+            <!-- Honeypot to reduce spam -->
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="New message from hartvelt.eu">
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Send message →</button>
+            </div>
+            <div id="formSuccess" class="form-success">
+              Message sent — I'll get back to you soon. Thank you!
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">Tim<span>.</span>Hartvelt</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="https://www.linkedin.com/newsletters/operating-ot-cybersecurity-7418298155592675328/" target="_blank" rel="noopener">Operating OT Cybersecurity</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.linkedin.com/in/hartvelt/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Tim Hartvelt · hartvelt.eu · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
